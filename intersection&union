@@ -1,0 +1,46 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class intersection {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter the number in arr1");
+        int n = sc.nextInt();
+
+        int arr1[] = new int[n];
+        for (int i = 0; i < n; i++)
+            arr1[i] = sc.nextInt();
+        System.out.println("enter the number in arr2");
+        int m = sc.nextInt();
+        int arr2[] = new int[m];
+        for (int j = 0; j < m; j++)
+            arr2[j] = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (arr1[i] == arr2[j]) {
+                    System.out.println(arr1[i] + " ");
+                    break;
+                }
+
+            }
+        }
+
+            for (int i = 0; i < n; i++) {
+                System.out.print(arr1[i]+" ");}
+
+                for (int i = 0; i < m; i++){
+                    int count=0;
+                for (int j = 0; j < n; j++) {
+
+                    if (arr2[i] == arr1[j]) {
+                        count++;
+                    }}
+
+                if (count == 0) {
+                    System.out.println(arr2[i] + " ");
+                }
+            }
+        }
+}
